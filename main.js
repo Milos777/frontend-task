@@ -17,7 +17,7 @@ function displaySearchResults(x) {
             resultsOnPage(resultsArray);
         })
         .catch(function () {
-            alert("An error occurred, try again");
+            console.log("An error occurred, try again");
         });
 }
 function resultsOnPage(array) {

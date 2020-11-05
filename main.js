@@ -15,9 +15,6 @@ function displaySearchResults(x) {
         .then(function (data) {
             let resultsArray = data.pages;
             resultsOnPage(resultsArray);
-        })
-        .catch(function () {
-            console.log("An error occurred, try again");
         });
 }
 function resultsOnPage(array) {
@@ -25,7 +22,6 @@ function resultsOnPage(array) {
         if (!item.description) {
             item.description = "No description";
         }
-        let itemUrl = encodeURI(`https://en.wikipedia.org/wiki/${item.title}`);
         var div = document.createElement("div");
         div.innerHTML = `<img src="https:${item.thumbnail.url}"/><h2>${item.title}</h2><p>${item.description}`;
 

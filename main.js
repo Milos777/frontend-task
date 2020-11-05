@@ -15,6 +15,9 @@ function displaySearchResults(x) {
         .then(function (data) {
             let resultsArray = data.pages;
             resultsOnPage(resultsArray);
+        })
+        .catch(function () {
+            console.log("An error occurred, try again");
         });
 }
 function resultsOnPage(array) {

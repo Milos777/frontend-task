@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frontend Task</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css"></link>
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="navigation__breadcrumbs">
+                <a href="#">Dashboard</a>
+                <a href="#">Main</a>
+                <a href="#">Home</a>
+            </div>
+            <form id="search_form" class="navigation__search">
+                <input id="search_input" type="text" class="search"/>
+                <button for="search" class="button">Search</button>
+            </form>
+        </nav>
+        <div class="container">
+            <aside class="aside">
+                <h1 class="aside__logo">Wiki</h1>
+                <ul class="aside__list">
+                    <li class="aside__list-link">Page Operations</li>
+                    <li class="aside__list-link">Browse Space</li>
+                    <li class="aside__list-link">Add Content</li>
+                </ul>
+            </aside>
+            <div class="content">
+                <ul class="content__list">
+                    <li class="content__list-link"><a href="#">Welcome Peldi</a></li>
+                    <li class="content__list-link"><a href="#">History</a></li>
+                    <li class="content__list-link"><a href="#">Preferences</a></li>
+                    <li class="content__list-link"><a href="#">Administration</a></li>
+                    <li class="content__list-link"><a href="#">Log out</a></li>
+                </ul>
+
+                <div id="results_list" class="content__block">
+                    <h2 class="content__block-status">Search to get results from wiki</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>

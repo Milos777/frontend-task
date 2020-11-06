@@ -9,14 +9,14 @@ search_form.addEventListener("submit", (e) => {
 function displaySearchResults(x) {
     let url = `https://en.wikipedia.org/w/rest.php/v1/search/page?q=${x}&limit=10`;
     fetch(url)
-        .then(function (response) {
+        .then((response) => {
             return response.json();
         })
-        .then(function (data) {
+        .then((data) => {
             let resultsArray = data.pages;
             resultsOnPage(resultsArray);
         })
-        .catch(function () {
+        .catch(() => {
             console.log("An error occurred, try again");
         });
 }
